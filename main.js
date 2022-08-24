@@ -64,6 +64,7 @@ $(document).ready(function(){
                         $(".xmark-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "1" && arr_cpu[0] == "5"){
                         $(".fist").css({
@@ -78,6 +79,7 @@ $(document).ready(function(){
                         $(".circle-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "1" && arr_cpu[0] == "6"){
                         $(".fist").css({
@@ -92,6 +94,7 @@ $(document).ready(function(){
                         $(".equals-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "2" && arr_cpu[0] == "4"){
                         $(".hand").css({
@@ -106,6 +109,7 @@ $(document).ready(function(){
                         $(".circle-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "2" && arr_cpu[0] == "5"){
                         $(".hand").css({
@@ -120,6 +124,7 @@ $(document).ready(function(){
                         $(".equals-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "2" && arr_cpu[0] == "6"){
                         $(".hand").css({
@@ -134,6 +139,7 @@ $(document).ready(function(){
                         $(".xmark-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "3" && arr_cpu[0] == "4"){
                         $(".cross").css({
@@ -148,6 +154,7 @@ $(document).ready(function(){
                         $(".equals-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "3" && arr_cpu[0] == "5"){
                         $(".cross").css({
@@ -162,6 +169,7 @@ $(document).ready(function(){
                         $(".xmark-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                     if(arr[0] == "3" && arr_cpu[0] == "6"){
                         $(".cross").css({
@@ -176,6 +184,7 @@ $(document).ready(function(){
                         $(".circle-cpu").css({
                             'opacity': '100'
                         });
+                        $(".fight").prop("disabled", true);
                     }
                 }
 
@@ -193,7 +202,7 @@ $(document).ready(function(){
             if(arr.length >= 1){
                 $(".rock").on("click", function(){
                     alert("Please push Clear.");
-                    $(".hand").css({
+                    $(".fist").css({
                         'opacity': '0'
                     });
                 });
@@ -208,10 +217,6 @@ $(document).ready(function(){
                     $(".cross").css({
                         'opacity': '0'
                     });
-                });
-                $(".fight").on("click", function(e){
-                    alert("Please push Clear.");
-                    e.preventDefault();
                 });
             }
         }
