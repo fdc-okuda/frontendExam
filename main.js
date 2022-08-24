@@ -10,18 +10,27 @@ $(document).ready(function(){
                 'opacity': '100'
             });
             arr.unshift("1");
+            $(".rock").prop("disabled", true);
+            $(".paper").prop("disabled", true);
+            $(".scissors").prop("disabled", true);
         })
         $(".paper").on("click", function(){
             $(".hand").css({
                 'opacity': '100'
             });
             arr.unshift("2");
+            $(".rock").prop("disabled", true);
+            $(".paper").prop("disabled", true);
+            $(".scissors").prop("disabled", true);
         })
         $(".scissors").on("click", function(){
             $(".cross").css({
                 'opacity': '100'
             });
             arr.unshift("3");
+            $(".rock").prop("disabled", true);
+            $(".paper").prop("disabled", true);
+            $(".scissors").prop("disabled", true);
         })
 
         $(".fight").on("click", function(){
