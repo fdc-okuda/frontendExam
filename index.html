@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9005a12b78.js" crossorigin="anonymous"></script>
+    <style>
+        .body{
+            width: 400px;
+            height: auto;
+        }
+        .title-you{
+            text-align: center;
+        }
+        .you{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            position: relative;
+        }
+        .cross{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 10px;
+        }
+        .hand{
+            position: absolute;
+            opacity: 0;
+            left: 15px;
+        }
+        .fist{
+            position: absolute;
+            opacity: 0;
+            left: 22px;
+        }
+        .equals{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 20px;
+        }
+        .circle{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 14px;
+        }
+        .xmark{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 36px;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+        }
+        .middle{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+        .clear{
+            margin-top: 20px;
+        }
+        .title-cpu{
+            text-align: center;
+        }
+        .cpu{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            position: relative;
+        }
+        .cross-cpu{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 10px;
+        }
+        .hand-cpu{
+            position: absolute;
+            opacity: 0;
+            left: 15px;
+        }
+        .fist-cpu{
+            position: absolute;
+            opacity: 0;
+            left: 22px;
+        }
+        .equals-cpu{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 20px;
+        }
+        .circle-cpu{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 14px;
+        }
+        .xmark-cpu{
+            position: absolute;
+            opacity: 0;
+            top: 5px;
+            left: 36px;
+        }
+    </style>
+    <title>Rock Paper Scissors</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="left">
+            <p class="title-you">You</p>
+            <div class="you">
+                <p class="cross"><i class="fa-solid fa-hand-scissors fa-10x"></i></p>
+                <p class="hand"><i class="fa-solid fa-hand  fa-10x"></i></p>
+                <p class="fist"><i class="fa-solid fa-hand-fist  fa-10x"></i></p>
+                <p class="equals"><i class="fa-solid fa-equals  fa-10x"></i></p>
+                <p class="circle"><i class="fa-solid fa-circle  fa-10x"></i></p>
+                <p class="xmark"><i class="fa-solid fa-xmark  fa-10x"></i></p>
+            </div>
+            <div class="options">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+            </div>
+        </div>
+        <div class="middle">
+            <button class="fight">Fight</button>
+            <button class="clear">Clear</button>
+        </div>
+        <div class="right">
+            <p class="title-cpu">CPU</p>
+            <div class="cpu">
+                <p class="cross-cpu item"><i class="fa-solid fa-hand-scissors fa-10x"></i></p>
+                <p class="hand-cpu item"><i class="fa-solid fa-hand  fa-10x"></i></p>
+                <p class="fist-cpu item"><i class="fa-solid fa-hand-fist  fa-10x"></i></p>
+                <p class="equals-cpu item"><i class="fa-solid fa-equals  fa-10x"></i></p>
+                <p class="circle-cpu item"><i class="fa-solid fa-circle  fa-10x"></i></p>
+                <p class="xmark-cpu item"><i class="fa-solid fa-xmark  fa-10x"></i></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <p></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
