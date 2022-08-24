@@ -179,18 +179,54 @@ $(document).ready(function(){
                     }
                 }
 
-                function end(){
-                    location.reload();
-                }
+                // function end(){
+                //     location.reload();
+                // }
+
+                
 
                 setTimeout(result, 1000);
-                setTimeout(end, 2500);
+                // setTimeout(end, 2500);
+                wait();
             }
         });
 
         $(".clear").on("click", function(){
             location.reload()
         });
+
+        // $(".rock").on("click", function(){
+        //     if(arr.length == 1 && arr_cpu.length == 1){
+        //         alert("Please push Clear.");
+        //     }
+        // });
+
+        function wait(){
+            if(arr.length == 1){
+                $(".rock").on("click", function(){
+                    alert("Please push Clear.");
+                    $(".fist").css({
+                        'opacity': '0'
+                    });
+                });
+                $(".paper").on("click", function(){
+                    alert("Please push Clear.");
+                    $(".hand").css({
+                        'opacity': '0'
+                    });
+                });
+                $(".scissors").on("click", function(){
+                    alert("Please push Clear.");
+                    $(".cross").css({
+                        'opacity': '0'
+                    });
+                });
+                $(".fight").on("click", function(e){
+                    alert("Please push Clear.");
+                    e.preventDefault()
+                });
+            }
+        }
 
     }
 
